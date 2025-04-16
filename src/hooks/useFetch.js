@@ -32,7 +32,7 @@ export const useFetch = (url) => {
 
     const data = await response.json();
     //sleep
-    await new Promise( resolve => setTimeout(resolve,1500));
+    await new Promise( resolve => setTimeout(resolve,100));
     if(!response.ok){
         setState({
             data:null,
