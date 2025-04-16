@@ -4,7 +4,7 @@ import { Message } from "./Message";
 
 export const SimpleFrom = () => {
     const [formState, setFormState ] = useState({
-        usrname: 'ElBarto',
+        username: 'ElBarto',
         email: 'elBartoLagarto@gmail.com'
     });
 
@@ -45,7 +45,7 @@ export const SimpleFrom = () => {
         onChange={onInputChange}
 
       />
-      <Message />
+      {(username === 'ElBarto') && <Message />}
     </>
 
   );
