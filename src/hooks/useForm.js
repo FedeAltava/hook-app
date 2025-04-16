@@ -10,9 +10,12 @@ export const useForm = ( inicialForm = {} ) => {
       [name]: value,
     });
   };
-
+  const onInputReset = () => {
+    setFormState(inicialForm);
+  };
   return {
-    formState,
+    ...formState,
     onInputChange,
+    onInputReset,
   };
 };
