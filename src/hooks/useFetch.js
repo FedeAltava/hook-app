@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react"
-import { Message } from "../02-UseEffect/Message";
+
 
 const localCache = {};
 
@@ -59,6 +59,7 @@ export const useFetch = (url) => {
         return;
     };
 
+    localCache[url] = data;
 
     setState({
         data:data,
@@ -69,7 +70,6 @@ export const useFetch = (url) => {
 
   };
 
-  localCache[url] = data;
 
   const {data, isLoading, hasError, error} = state;
     return{

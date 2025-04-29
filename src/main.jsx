@@ -5,6 +5,8 @@ import { CounterWithCustomHook } from './01-UseState/CounterWithCustomHook'
 import { SimpleFrom } from './02-UseEffect/SimpleFrom'
 import { FormWithCustomHook } from './02-UseEffect/FormWithCustomHook'
 import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks'
+import { FocusScreen } from './04-UseRef/FocusScreen'
+import { Memorize } from './06-memos/Memorize'
 // import { CounterApp } from './01-UseState/CounterApp'
 // import { HooksApp } from './HooksApp'
 
@@ -16,6 +18,8 @@ createRoot(document.getElementById('root')).render(
     {/* <CounterWithCustomHook /> */}
     {/* <SimpleFrom /> */}
     {/* <FormWithCustomHook /> */}
-    <MultipleCustomHooks />
+    {/* <MultipleCustomHooks /> */}
+    {/* <FocusScreen /> */}
+    <Memorize />
   </StrictMode>,
 )
